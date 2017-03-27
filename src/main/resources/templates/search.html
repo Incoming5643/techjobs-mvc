@@ -36,9 +36,8 @@
 
     <hr />
 
-    <!-- TODO #2 - Loop over jobs map to display all job fields -->
     <div th:fragment="search-results">
-        <span th:each="result : ${values}">
+        <span th:each="result : ${jobs}">
             <table class = "job-listing">
                 <span th:each="entry : ${result}">
                     <tr>
